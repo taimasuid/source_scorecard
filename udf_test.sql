@@ -2,8 +2,8 @@
 
 
 ## To run this:
-##      chmod a+x udf_example.sql
-##      ./udf_example.sql
+##      chmod a+x udf_test.sql
+##      ./udf_test.sql
 
 bq query \-\-nouse_legacy_sql \
 
@@ -31,4 +31,4 @@ LANGUAGE js AS """
 
 
 SELECT touchpoint_value, touchpoint_type, counter(TO_JSON_STRING(t)) AS counter
-FROM `abilitec-build-staging-us.abilitec_build_interns.udf_test`  AS t'
+FROM `[LOCATION].[TABLE NAME]`  AS t'
