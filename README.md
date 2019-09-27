@@ -7,7 +7,7 @@ Goal is to capture each sources measurable value with respect to its contributio
 - Mapper
 - Reducer
 
-Mapper1.py takes the dataset and converts it to another set of data, where individual elements are broken down into tuples of key,value pairs intermediate outputs. reducer1.py takes the output from mapper1.py as the input.In the reducer, a string is parsed from mapper1.py as a key, value pair and kept as a set(). Combining the data tuples into smaller set, this created the final output. 
+Mapper.py takes the dataset and converts it to another set of data, where individual elements are broken down into tuples of key,value pairs intermediate outputs. reducer.py takes the output from mapper.py as the input.In the reducer, a string is parsed from mapper.py as a key, value pair and kept as a set(). Combining the data tuples into smaller set, this created the final output. 
 
 ### Technologies Used
 - Jenkins
@@ -75,3 +75,8 @@ Create BigQuery layout:
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
+
+### notes
+Due to confidential reasons:
+- Data that includes source names has been removed from files
+- Jenkins file not included
