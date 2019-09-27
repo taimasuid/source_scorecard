@@ -76,7 +76,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
-### notes
+## Notes
 Due to confidential reasons:
 - Data that includes source names has been removed from files
 - Jenkins file not included
