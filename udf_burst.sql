@@ -33,7 +33,7 @@ LANGUAGE js AS """
 
 WITH bursted_sources AS
   (SELECT touchpoint_value, burstSource(TO_JSON_STRING(t)) AS bursted_source
-   FROM `abilitec-build-staging-us.abilitec_build_interns.udf_test` AS t)
+   FROM `[TABLE LOCATION].[TABLE NAME]` AS t)
 SELECT source, contribution, ARRAY_AGG(cnt_per_contribution ORDER BY sourceCount ASC) AS cnt_per_contribution, contribution >=2 as more_than_five
 FROM (SELECT flattened_records.source, flattened_records.sourceCount, flattened_records.sourceCount as contribution, count(*) as cnt_per_contribution
       FROM bursted_sources
