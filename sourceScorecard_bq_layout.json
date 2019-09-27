@@ -1,0 +1,21 @@
+#Below inlcudes a BigQuery json template. Data has been removed from original file
+#Layout must inlcude fieldNames of sources provided
+
+{
+  "sources": [
+    {
+      "delimiter": "\t",
+      "description": "goal is to capture each source’s measurable value with respect to its contribution to the person formations in the graph with a scorecard", 
+      "encoding": "latin-1",
+      "format": "line",
+      "layout": [
+        {
+          "fieldName": "touchpoint_value"
+        },
+        {
+          "fieldName": "touchpoint_type"
+        },
+       			],
+       "name": "sourceScorecard"
+    }
+  ]
