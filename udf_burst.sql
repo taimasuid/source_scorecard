@@ -3,8 +3,8 @@
 
 
 ## To run this:
-##      chmod a+x udf_example.sql
-##      ./udf_example.sql
+##      chmod a+x udf_burst.sql
+##      ./udf_burst.sql
 
 bq query \-\-nouse_legacy_sql \
 
